@@ -1,0 +1,10 @@
+#Sat Apr 27 10:45:21 BRT 2019
+path.2=classes3.dex
+path.1=classes2.dex
+path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.2=D\:\\Projetos\\Android\\courseFlutter\\loja_virtual\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
+base.1=D\:\\Projetos\\Android\\courseFlutter\\loja_virtual\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
+base.0=D\:\\Projetos\\Android\\courseFlutter\\loja_virtual\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0

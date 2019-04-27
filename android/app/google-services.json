@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "277521250157",
+    "firebase_url": "https://lojavirtual-b85ed.firebaseio.com",
+    "project_id": "lojavirtual-b85ed",
+    "storage_bucket": "lojavirtual-b85ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277521250157:android:9f6cbcbdeccaf8e9",
+        "android_client_info": {
+          "package_name": "com.kenjicataoca.loja_virtual"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "277521250157-eq1kvbmco39bfcbpvgunfnlbp1md4u50.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5HXYJ114kIPRTDgjwHGb95C8JdbizPu4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
