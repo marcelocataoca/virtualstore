@@ -22,4 +22,13 @@ class ProductData{
     images = snapshot.data['images'];
     sizes = snapshot.data['sizes'];
   }
+
+  //O que sera mostrado no menu Meus pedidos
+  Map<String, dynamic> toResumedMap(){
+    return{
+      "title": title,
+      "description": description,
+      "price": price
+    };
+  }
 }

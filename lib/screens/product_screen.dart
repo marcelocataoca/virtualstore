@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:loja_virtual/data/product_data.dart';
 import 'package:carousel_pro/carousel_pro.dart';
+import 'package:loja_virtual/models/user_model.dart';
+import 'package:loja_virtual/screens/login_screen.dart';
+import 'package:loja_virtual/data/cart_product.dart';
+import 'package:loja_virtual/models/cart_model.dart';
+import 'package:loja_virtual/screens/cart_screen.dart';
 
 class ProductScreen extends StatefulWidget {
 
@@ -118,8 +123,27 @@ class _ProductScreenState extends State<ProductScreen> {
                   height: 44.0,
                   child: RaisedButton(
                     //habilita ou desabilita btn de addcart
-                      onPressed: size != null ? (){} : null,
-                      child: Text("Adicionar ao carrinho",
+                      onPressed: size != null ? (){
+                        if(UserModel.of(context).isLoggedIn()){
+                          CartProduct cartProduct = CartProduct();
+                          cartProduct.size = size;
+                          cartProduct.quantity = 1;
+                          cartProduct.pid = product.id;
+                          cartProduct.category = product.category;
+                          //produto será add ao carrinho
+                          CartModel.of(context).addCartItem(cartProduct);
+
+                          Navigator.of(context).push(
+                              MaterialPageRoute(builder: (context)=> CartScreen())
+                          );
+                        }else{
+                          Navigator.of(context).push(
+                            MaterialPageRoute(builder: (context)=> LoginScreen())
+                          );
+                        }
+                      } : null,
+                      child: Text(UserModel.of(context).isLoggedIn() ?
+                        "Adicionar ao carrinho" : "Entre para comprar",
                         style: TextStyle(fontSize: 18.0),
                       ),
                       color: primaryColor,
