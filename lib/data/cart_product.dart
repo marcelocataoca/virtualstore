@@ -32,7 +32,7 @@ class CartProduct{
       "quantity": quantity,
       "size": size,
       //resumo dos produtos, os dados mais relevantes do produto
-      //"product": productData.toResumedMap()
+      "product": productData.toResumedMap()
     };
   }
 }
